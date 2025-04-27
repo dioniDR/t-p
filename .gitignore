@@ -18,3 +18,5 @@ logs/*.log
 # Archivos de prueba
 *.sqlite
 *.db
+#carpetas excluidas
+promts/

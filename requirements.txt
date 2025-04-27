@@ -1,0 +1,16 @@
+# Requisitos mínimos del entorno de desarrollo
+openai==1.72.0
+anthropic
+mysql-connector-python
+python-dotenv
+pyyaml
+pandas
+requests
+click
+
+# Dependencias opcionales (según necesidades)
+pymysql
+psycopg2-binary
+ipykernel
+psutil
+pyprojroot

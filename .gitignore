@@ -1,0 +1,20 @@
+# Entorno Python
+venv/
+__pycache__/
+*.pyc
+
+# Ignorar checkpoints de Jupyter (VSCode o JupyterLab)
+*.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Configuración local y credenciales
+.env
+.env.bak
+config/settings.yaml
+
+# Logs
+logs/*.log
+
+# Archivos de prueba
+*.sqlite
+*.db

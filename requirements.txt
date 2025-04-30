@@ -1,4 +1,4 @@
-# Requisitos mínimos del entorno de desarrollo
+# Requisitos principales
 openai==1.72.0
 anthropic
 mysql-connector-python
@@ -8,9 +8,19 @@ pandas
 requests
 click
 
-# Dependencias opcionales (según necesidades)
+# Dependencias para base de datos
 pymysql
 psycopg2-binary
-ipykernel
+
+# Dependencias para detección de sistema
 psutil
+
+# Dependencias para notebooks y desarrollo
+ipykernel
 pyprojroot
+
+# Dependencias para CrewAI (si se usa)
+crewai
+
+# Dependencias para pruebas
+pytest

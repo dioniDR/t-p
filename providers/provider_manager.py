@@ -56,3 +56,26 @@ class ProviderManager:
         if provider_name not in self.providers:
             raise ValueError(f"Proveedor '{provider_name}' no disponible")
         return self.providers[provider_name].generate_text(prompt)
+
+    # Añadir a providers/provider_manager.py
+
+    def get_crew_adapter(self, provider_name=None):
+        """
+        Obtiene un adaptador CrewAI para el proveedor especificado.
+        
+        Args:
+            provider_name: Nombre del proveedor a adaptar (optional)
+            
+        Returns:
+            Adaptador CrewAI para el proveedor
+        """
+        from providers.adapters.crewai_adapter import CrewAIAdapter
+        
+        if provider_name:
+            if provider_name not in self.providers:
+                raise ValueError(f"Proveedor '{provider_name}' no disponible")
+            provider = self.providers[provider_name]
+        else:
+            provider = self.get_provider()
+            
+        return CrewAIAdapter(provider)

@@ -1,0 +1,27 @@
+# config/workflows/db_analysis.yaml
+id: "db_analysis"
+name: "Análisis de Bases de Datos"
+description: "Flujo de trabajo para analizar el sistema y bases de datos con CrewAI"
+
+steps:
+  - type: "system_detection"
+    name: "Detección del Sistema"
+    description: "Detecta el sistema operativo y las bases de datos disponibles"
+    
+  - type: "crew_analysis"
+    name: "Análisis por CrewAI"
+    description: "Ejecuta un análisis completo con agentes colaborativos"
+    agents:
+      - "db_expert"
+      - "system_analyst"
+      - "ollama_agent"
+    
+  - type: "recommendations"
+    name: "Recomendaciones"
+    provider: "claude"
+    prompt: "Basado en el análisis anterior, proporciona recomendaciones prácticas para optimizar el uso de bases de datos en este sistema."
+    
+  - type: "implementation"
+    name: "Implementación"
+    provider: "ollama"
+    prompt: "Genera scripts de configuración para implementar las recomendaciones anteriores en sistemas {environment.system}."

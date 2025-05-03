@@ -2,8 +2,10 @@
 openai==1.72.0
 anthropic
 mysql-connector-python
+Schema
 python-dotenv
 pyyaml
+matplotlib
 pandas
 requests
 click

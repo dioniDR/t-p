@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-05-02T14:23:26.136427",
+  "environment": {
+    "system": "Linux",
+    "release": "6.11.0-24-generic",
+    "architecture": "x86_64",
+    "hostname": "dioni-ASUS-Vivobook-S-14-M5406WA-M5406WA",
+    "in_docker": false
+  },
+  "database_systems": {
+    "mysql": {
+      "client_available": true,
+      "ports_detected": [
+        3307
+      ],
+      "status": "fully_available",
+      "configuration_valid": true
+    },
+    "postgresql": {
+      "client_available": true,
+      "ports_detected": [],
+      "status": "client_only"
+    },
+    "sqlite": {
+      "client_available": true,
+      "ports_detected": [],
+      "status": "client_only"
+    }
+  },
+  "configuration": {
+    "mysql": {
+      "host": "127.0.0.1",
+      "port": 3307,
+      "user": "root",
+      "password": "password",
+      "database": "bodega",
+      "status": "configured",
+      "connection_status": "Connected to MySQL server version 8.0.41"
+    }
+  }
+}
